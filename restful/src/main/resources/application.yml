@@ -1,10 +1,12 @@
 spring:
-  thymeleaf:
-    mode: HTML5
-    encoding: UTF-8
-    cache: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Hongkong
     username: root
     password: root
+logging:
+  level:
+    cn.ordinary.study.restful: debug
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
